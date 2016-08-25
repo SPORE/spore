@@ -1,0 +1,2520 @@
+{
+   "name" : "Trello",
+   "formats" : [
+      "json"
+   ],
+   "version" : "0.1",
+   "base_url" : "https://api.trello.com",
+   "methods" : {
+      "post_cards_card_id_or_shortlink_members" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/cards/:card_id_or_shortlink/members",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "put_organizations_idorg_or_name_prefs_externalmembersdisabled" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/prefs/externalMembersDisabled",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_organizations_idorg_or_name" : {
+         "optional_params" : [
+            "token",
+            "actions",
+            "actions_limit",
+            "action_fields",
+            "members",
+            "member_fields",
+            "member_activity",
+            "boards",
+            "board_fields",
+            "board_actions",
+            "board_actions_format",
+            "board_actions_since",
+            "board_actions_limit",
+            "board_action_fields",
+            "board_lists",
+            "paid_account",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/organizations/:idOrg_or_name",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "post_boards_board_id_invitations_response" : {
+         "optional_params" : [
+            "token",
+            "inviteToken"
+         ],
+         "method" : "POST",
+         "path" : "/1/boards/:board_id/invitations/:response",
+         "required_params" : [
+            "key",
+            "board_id",
+            "response"
+         ]
+      },
+      "put_organizations_idorg_or_name_name" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/name",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "post_cards_card_id_or_shortlink_actions_comments" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/cards/:card_id_or_shortlink/actions/comments",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "put_boards_board_id_members_idmember_deactivated" : {
+         "optional_params" : [
+            "token",
+            "value"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/members/:idMember/deactivated",
+         "required_params" : [
+            "key",
+            "board_id",
+            "idMember"
+         ]
+      },
+      "put_organizations_idorg_or_name_prefs_permissionlevel" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/prefs/permissionLevel",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_members_idmember_or_username_notifications_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/notifications/:filter",
+         "required_params" : [
+            "key",
+            "idMember_or_username",
+            "filter"
+         ]
+      },
+      "post_boards_board_id_markasviewed" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/boards/:board_id/markAsViewed",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "put_lists_idlist_name" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/lists/:idList/name",
+         "required_params" : [
+            "key",
+            "idList"
+         ]
+      },
+      "get_notifications_idnotification_organization_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/organization/:field",
+         "required_params" : [
+            "key",
+            "idNotification",
+            "field"
+         ]
+      },
+      "post_cards_card_id_or_shortlink_attachments" : {
+         "optional_params" : [
+            "token",
+            "file",
+            "url",
+            "name"
+         ],
+         "method" : "POST",
+         "path" : "/1/cards/:card_id_or_shortlink/attachments",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "post_boards_board_id_lists" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/boards/:board_id/lists",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_checkitemstates" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/checkItemStates",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_desc" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/desc",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "delete_cards_card_id_or_shortlink" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/cards/:card_id_or_shortlink",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "put_boards_board_id_members_idmember" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/members/:idMember",
+         "required_params" : [
+            "key",
+            "board_id",
+            "idMember"
+         ]
+      },
+      "get_tokens_token_member_field" : {
+         "optional_params" : [],
+         "method" : "GET",
+         "path" : "/1/tokens/:token/member/:field",
+         "required_params" : [
+            "key",
+            "token",
+            "field"
+         ]
+      },
+      "delete_organizations_idorg_or_name_members_idmember" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/organizations/:idOrg_or_name/members/:idMember",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "idMember"
+         ]
+      },
+      "get_checklists_idchecklist_board_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/checklists/:idChecklist/board/:field",
+         "required_params" : [
+            "key",
+            "idChecklist",
+            "field"
+         ]
+      },
+      "get_lists_idlist" : {
+         "optional_params" : [
+            "token",
+            "cards",
+            "card_fields",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/lists/:idList",
+         "required_params" : [
+            "key",
+            "idList"
+         ]
+      },
+      "get_members_idmember_or_username_cards_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/cards/:filter",
+         "required_params" : [
+            "key",
+            "idMember_or_username",
+            "filter"
+         ]
+      },
+      "post_boards_board_id_invitations" : {
+         "optional_params" : [
+            "token",
+            "idMember",
+            "email",
+            "type"
+         ],
+         "method" : "POST",
+         "path" : "/1/boards/:board_id/invitations",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_lists_idlist_actions" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields",
+            "limit",
+            "format",
+            "since",
+            "page",
+            "idModels"
+         ],
+         "method" : "GET",
+         "path" : "/1/lists/:idList/actions",
+         "required_params" : [
+            "key",
+            "idList"
+         ]
+      },
+      "post_checklists" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/checklists",
+         "required_params" : [
+            "key"
+         ]
+      },
+      "post_cards_card_id_or_shortlink_checklists" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/cards/:card_id_or_shortlink/checklists",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "delete_organizations_idorg_or_name" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/organizations/:idOrg_or_name",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_notifications_idnotification_membercreator_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/memberCreator/:field",
+         "required_params" : [
+            "key",
+            "idNotification",
+            "field"
+         ]
+      },
+      "get_organizations_idorg_or_name_boards" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields",
+            "actions",
+            "actions_limit",
+            "actions_format",
+            "actions_since",
+            "action_fields",
+            "lists"
+         ],
+         "method" : "GET",
+         "path" : "/1/organizations/:idOrg_or_name/boards",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "put_lists_idlist_closed" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/lists/:idList/closed",
+         "required_params" : [
+            "key",
+            "idList"
+         ]
+      },
+      "put_checklists_idchecklist_name" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/checklists/:idChecklist/name",
+         "required_params" : [
+            "key",
+            "idChecklist"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_actions" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields",
+            "limit",
+            "format",
+            "since",
+            "page",
+            "idModels"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/actions",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "get_boards_board_id_organization_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/organization/:field",
+         "required_params" : [
+            "key",
+            "board_id",
+            "field"
+         ]
+      },
+      "get_boards_board_id" : {
+         "optional_params" : [
+            "token",
+            "actions",
+            "actions_format",
+            "actions_since",
+            "actions_limit",
+            "action_fields",
+            "cards",
+            "card_fields",
+            "card_attachments",
+            "card_attachment_fields",
+            "lists",
+            "list_fields",
+            "members",
+            "member_fields",
+            "membersInvited",
+            "membersInvited_fields",
+            "checklists",
+            "checklist_fields",
+            "organization",
+            "organization_fields",
+            "myPrefs",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_boards_board_id_myprefs" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/myPrefs",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_boards_board_id_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/:field",
+         "required_params" : [
+            "key",
+            "board_id",
+            "field"
+         ]
+      },
+      "get_organizations_idorg_or_name_members_idmember_cards" : {
+         "optional_params" : [
+            "token",
+            "actions",
+            "attachments",
+            "attachment_fields",
+            "members",
+            "member_fields",
+            "checkItemStates",
+            "checklists",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/organizations/:idOrg_or_name/members/:idMember/cards",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "idMember"
+         ]
+      },
+      "put_members_idmember_or_username" : {
+         "optional_params" : [
+            "token",
+            "fullName",
+            "initials",
+            "bio"
+         ],
+         "method" : "PUT",
+         "path" : "/1/members/:idMember_or_username",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "get_organizations_idorg_or_name_actions" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields",
+            "limit",
+            "format",
+            "since",
+            "page",
+            "idModels"
+         ],
+         "method" : "GET",
+         "path" : "/1/organizations/:idOrg_or_name/actions",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_checklist_idchecklist_checkitem_idcheckitem_state" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/checklist/:idCheckList/checkItem/:idCheckItem/state",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "idCheckList",
+            "idCheckItem"
+         ]
+      },
+      "get_organizations_idorg_or_name_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/organizations/:idOrg_or_name/:field",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "field"
+         ]
+      },
+      "post_boards" : {
+         "optional_params" : [
+            "token",
+            "desc",
+            "idOrganization",
+            "idBoardSource",
+            "keepFromSource",
+            "prefs_permissionLevel",
+            "prefs_voting",
+            "prefs_comments",
+            "prefs_invitations",
+            "prefs_selfJoin",
+            "prefs_cardCovers"
+         ],
+         "method" : "POST",
+         "path" : "/1/boards",
+         "required_params" : [
+            "key"
+         ]
+      },
+      "post_boards_board_id_myprefs" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/boards/:board_id/myPrefs",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "put_boards_board_id_prefs_voting" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/prefs/voting",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "post_organizations_idorg_or_name_logo" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/organizations/:idOrg_or_name/logo",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_actions_idaction_organization_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/organization/:field",
+         "required_params" : [
+            "key",
+            "idAction",
+            "field"
+         ]
+      },
+      "delete_tokens_token" : {
+         "optional_params" : [],
+         "method" : "DELETE",
+         "path" : "/1/tokens/:token",
+         "required_params" : [
+            "key",
+            "token"
+         ]
+      },
+      "put_organizations_idorg_or_name_members_idmember" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/members/:idMember",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "idMember"
+         ]
+      },
+      "post_cards" : {
+         "optional_params" : [
+            "token",
+            "desc",
+            "pos",
+            "idCardSource",
+            "keepFromSource"
+         ],
+         "method" : "POST",
+         "path" : "/1/cards",
+         "required_params" : [
+            "key"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/:field",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "field"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_board_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/board/:field",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "field"
+         ]
+      },
+      "delete_boards_board_id_members_idmember" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/boards/:board_id/members/:idMember",
+         "required_params" : [
+            "key",
+            "board_id",
+            "idMember"
+         ]
+      },
+      "delete_organizations_idorg_or_name_members_idmember_all" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/organizations/:idOrg_or_name/members/:idMember/all",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "idMember"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_checklist_idchecklist_checkitem_idcheckitem_pos" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/checklist/:idCheckList/checkItem/:idCheckItem/pos",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "idCheckList",
+            "idCheckItem"
+         ]
+      },
+      "get_notifications_idnotification_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/:field",
+         "required_params" : [
+            "key",
+            "idNotification",
+            "field"
+         ]
+      },
+      "get_members_idmember_or_username_organizations_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/organizations/:filter",
+         "required_params" : [
+            "key",
+            "idMember_or_username",
+            "filter"
+         ]
+      },
+      "get_boards_board_id_actions" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields",
+            "limit",
+            "format",
+            "since",
+            "page",
+            "idModels"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/actions",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "delete_cards_card_id_or_shortlink_checklists_idchecklist" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/cards/:card_id_or_shortlink/checklists/:idChecklist",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "idChecklist"
+         ]
+      },
+      "get_actions_idaction_board_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/board/:field",
+         "required_params" : [
+            "key",
+            "idAction",
+            "field"
+         ]
+      },
+      "get_members_idmember_or_username" : {
+         "optional_params" : [
+            "token",
+            "actions",
+            "actions_limit",
+            "action_fields",
+            "cards",
+            "card_fields",
+            "card_members",
+            "card_member_fields",
+            "card_attachments",
+            "card_attachment_fields",
+            "boards",
+            "board_fields",
+            "board_actions",
+            "board_actions_format",
+            "board_actions_since",
+            "board_actions_limit",
+            "board_action_fields",
+            "board_lists",
+            "boardsInvited",
+            "boardsInvited_fields",
+            "organizations",
+            "organization_fields",
+            "organizationsInvited",
+            "organizationsInvited_fields",
+            "notifications",
+            "notifications_limit",
+            "notification_fields",
+            "tokens",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "post_lists" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/lists",
+         "required_params" : [
+            "key"
+         ]
+      },
+      "delete_organizations_idorg_or_name_prefs_orginviterestrict" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/organizations/:idOrg_or_name/prefs/orgInviteRestrict",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_checklists_idchecklist_checkitems" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/checklists/:idChecklist/checkItems",
+         "required_params" : [
+            "key",
+            "idChecklist"
+         ]
+      },
+      "get_boards_board_id_cards_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/cards/:filter",
+         "required_params" : [
+            "key",
+            "board_id",
+            "filter"
+         ]
+      },
+      "put_organizations_idorg_or_name_prefs_boardvisibilityrestrict_org" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/prefs/boardVisibilityRestrict/org",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_notifications_idnotification" : {
+         "optional_params" : [
+            "token",
+            "fields",
+            "memberCreator",
+            "memberCreator_fields",
+            "board",
+            "board_fields",
+            "list",
+            "card",
+            "card_fields",
+            "organization",
+            "organization_fields",
+            "member",
+            "member_fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification",
+         "required_params" : [
+            "key",
+            "idNotification"
+         ]
+      },
+      "put_members_idmember_or_username_bio" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/members/:idMember_or_username/bio",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "get_notifications_idnotification_card" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/card",
+         "required_params" : [
+            "key",
+            "idNotification"
+         ]
+      },
+      "get_boards_board_id_members_idmember_cards" : {
+         "optional_params" : [
+            "token",
+            "actions",
+            "attachments",
+            "attachment_fields",
+            "members",
+            "member_fields",
+            "checkItemStates",
+            "checklists",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/members/:idMember/cards",
+         "required_params" : [
+            "key",
+            "board_id",
+            "idMember"
+         ]
+      },
+      "put_cards_card_id_or_shortlink" : {
+         "optional_params" : [
+            "token",
+            "name",
+            "desc",
+            "closed",
+            "idAttachmentCover",
+            "idList",
+            "pos",
+            "due",
+            "subscribed"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "post_cards_card_id_or_shortlink_membersvoted" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/cards/:card_id_or_shortlink/membersVoted",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "put_notifications_idnotification_unread" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/notifications/:idNotification/unread",
+         "required_params" : [
+            "key",
+            "idNotification"
+         ]
+      },
+      "get_members_idmember_or_username_organizations" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/organizations",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "post_boards_board_id_checklists" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/boards/:board_id/checklists",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_members_idmember_or_username_notifications" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "read_filter",
+            "fields",
+            "limit",
+            "page",
+            "before",
+            "since"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/notifications",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "get_boards_board_id_lists" : {
+         "optional_params" : [
+            "token",
+            "cards",
+            "card_fields",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/lists",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "put_organizations_idorg_or_name_prefs_orginviterestrict" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/prefs/orgInviteRestrict",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "delete_cards_card_id_or_shortlink_membersvoted_idmember" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/cards/:card_id_or_shortlink/membersVoted/:idMember",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "idMember"
+         ]
+      },
+      "get_boards_board_id_lists_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/lists/:filter",
+         "required_params" : [
+            "key",
+            "board_id",
+            "filter"
+         ]
+      },
+      "get_notifications_idnotification_board" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/board",
+         "required_params" : [
+            "key",
+            "idNotification"
+         ]
+      },
+      "get_actions_idaction_list" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/list",
+         "required_params" : [
+            "key",
+            "idAction"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_attachments" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/attachments",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_list" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/list",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "post_organizations_idorg_or_name_invitations" : {
+         "optional_params" : [
+            "token",
+            "idMember",
+            "email",
+            "type"
+         ],
+         "method" : "POST",
+         "path" : "/1/organizations/:idOrg_or_name/invitations",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "put_organizations_idorg_or_name_members_idmember_deactivate" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/members/:idMember/deactivate",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "idMember"
+         ]
+      },
+      "put_members_idmember_or_username_fullname" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/members/:idMember_or_username/fullName",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "get_members_idmember_or_username_actions" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields",
+            "limit",
+            "format",
+            "since",
+            "page",
+            "idModels"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/actions",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "get_notifications_idnotification_member" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/member",
+         "required_params" : [
+            "key",
+            "idNotification"
+         ]
+      },
+      "get_checklists_idchecklist_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/checklists/:idChecklist/:field",
+         "required_params" : [
+            "key",
+            "idChecklist",
+            "field"
+         ]
+      },
+      "get_notifications_idnotification_board_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/board/:field",
+         "required_params" : [
+            "key",
+            "idNotification",
+            "field"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_name" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/name",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "get_tokens_token_field" : {
+         "optional_params" : [],
+         "method" : "GET",
+         "path" : "/1/tokens/:token/:field",
+         "required_params" : [
+            "key",
+            "token",
+            "field"
+         ]
+      },
+      "get_checklists_idchecklist_cards" : {
+         "optional_params" : [
+            "token",
+            "actions",
+            "attachments",
+            "attachment_fields",
+            "members",
+            "member_fields",
+            "checkItemStates",
+            "checklists",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/checklists/:idChecklist/cards",
+         "required_params" : [
+            "key",
+            "idChecklist"
+         ]
+      },
+      "put_organizations_idorg_or_name_members_idmember_deactivated" : {
+         "optional_params" : [
+            "token",
+            "value"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/members/:idMember/deactivated",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "idMember"
+         ]
+      },
+      "get_actions_idaction_card_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/card/:field",
+         "required_params" : [
+            "key",
+            "idAction",
+            "field"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_checklist_idchecklist_checkitem_idcheckitem_name" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/checklist/:idCheckList/checkItem/:idCheckItem/name",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "idCheckList",
+            "idCheckItem"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_members" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/members",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "post_lists_idlist_cards" : {
+         "optional_params" : [
+            "token",
+            "desc"
+         ],
+         "method" : "POST",
+         "path" : "/1/lists/:idList/cards",
+         "required_params" : [
+            "key",
+            "idList"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_closed" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/closed",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "post_organizations" : {
+         "optional_params" : [
+            "token",
+            "name",
+            "displayName",
+            "desc",
+            "website"
+         ],
+         "method" : "POST",
+         "path" : "/1/organizations",
+         "required_params" : [
+            "key"
+         ]
+      },
+      "put_boards_board_id" : {
+         "optional_params" : [
+            "token",
+            "name",
+            "desc",
+            "closed",
+            "idOrganization"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_list_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/list/:field",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "field"
+         ]
+      },
+      "get_boards_board_id_members_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/members/:filter",
+         "required_params" : [
+            "key",
+            "board_id",
+            "filter"
+         ]
+      },
+      "get_notifications_idnotification_list" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/list",
+         "required_params" : [
+            "key",
+            "idNotification"
+         ]
+      },
+      "get_boards_board_id_cards" : {
+         "optional_params" : [
+            "token",
+            "actions",
+            "attachments",
+            "attachment_fields",
+            "members",
+            "member_fields",
+            "checkItemStates",
+            "checklists",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/cards",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "put_boards_board_id_closed" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/closed",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_members_idmember_or_username_organizationsinvited" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/organizationsInvited",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "post_checklists_idchecklist_checkitems" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/checklists/:idChecklist/checkItems",
+         "required_params" : [
+            "key",
+            "idChecklist"
+         ]
+      },
+      "get_members_idmember_or_username_cards" : {
+         "optional_params" : [
+            "token",
+            "actions",
+            "attachments",
+            "attachment_fields",
+            "members",
+            "member_fields",
+            "checkItemStates",
+            "checklists",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/cards",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_checklists" : {
+         "optional_params" : [
+            "token",
+            "cards",
+            "card_fields",
+            "checkItems",
+            "checkItem_fields",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/checklists",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_due" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/due",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "get_actions_idaction_member" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/member",
+         "required_params" : [
+            "key",
+            "idAction"
+         ]
+      },
+      "delete_cards_card_id_or_shortlink_labels_color" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/cards/:card_id_or_shortlink/labels/:color",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "color"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_subscribed" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/subscribed",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "put_boards_board_id_prefs_invitations" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/prefs/invitations",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "delete_checklists_idchecklist_checkitems_idcheckitem" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/checklists/:idChecklist/checkItems/:idCheckItem",
+         "required_params" : [
+            "key",
+            "idChecklist",
+            "idCheckItem"
+         ]
+      },
+      "get_boards_board_id_members" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields",
+            "activity"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/members",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "put_notifications_idnotification" : {
+         "optional_params" : [
+            "token",
+            "unread"
+         ],
+         "method" : "PUT",
+         "path" : "/1/notifications/:idNotification",
+         "required_params" : [
+            "key",
+            "idNotification"
+         ]
+      },
+      "put_boards_board_id_prefs_cardcovers" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/prefs/cardCovers",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "delete_cards_card_id_or_shortlink_attachments_idattachment" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/cards/:card_id_or_shortlink/attachments/:idAttachment",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "idAttachment"
+         ]
+      },
+      "get_notifications_idnotification_card_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/card/:field",
+         "required_params" : [
+            "key",
+            "idNotification",
+            "field"
+         ]
+      },
+      "get_cards_card_id_or_shortlink" : {
+         "optional_params" : [
+            "token",
+            "actions",
+            "actions_limit",
+            "action_fields",
+            "attachments",
+            "attachment_fields",
+            "members",
+            "member_fields",
+            "checkItemStates",
+            "checkItemState_fields",
+            "checklists",
+            "checklist_fields",
+            "board",
+            "board_fields",
+            "list",
+            "list_fields",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "put_boards_board_id_desc" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/desc",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_checklists_idchecklist" : {
+         "optional_params" : [
+            "token",
+            "cards",
+            "card_fields",
+            "checkItems",
+            "checkItem_fields",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/checklists/:idChecklist",
+         "required_params" : [
+            "key",
+            "idChecklist"
+         ]
+      },
+      "get_checklists_idchecklist_board" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/checklists/:idChecklist/board",
+         "required_params" : [
+            "key",
+            "idChecklist"
+         ]
+      },
+      "put_organizations_idorg_or_name_prefs_boardvisibilityrestrict_private" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/prefs/boardVisibilityRestrict/private",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "put_members_idmember_or_username_initials" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/members/:idMember_or_username/initials",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "get_lists_idlist_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/lists/:idList/:field",
+         "required_params" : [
+            "key",
+            "idList",
+            "field"
+         ]
+      },
+      "get_actions_idaction_member_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/member/:field",
+         "required_params" : [
+            "key",
+            "idAction",
+            "field"
+         ]
+      },
+      "delete_cards_card_id_or_shortlink_members_idmember" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/cards/:card_id_or_shortlink/members/:idMember",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink",
+            "idMember"
+         ]
+      },
+      "get_members_idmember_or_username_boardsinvited" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/boardsInvited",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "get_notifications_idnotification_membercreator" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/memberCreator",
+         "required_params" : [
+            "key",
+            "idNotification"
+         ]
+      },
+      "get_checklists_idchecklist_cards_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/checklists/:idChecklist/cards/:filter",
+         "required_params" : [
+            "key",
+            "idChecklist",
+            "filter"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_idlist" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/idList",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "put_lists_idlist_pos" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/lists/:idList/pos",
+         "required_params" : [
+            "key",
+            "idList"
+         ]
+      },
+      "get_tokens_token" : {
+         "optional_params" : [
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/tokens/:token",
+         "required_params" : [
+            "key",
+            "token"
+         ]
+      },
+      "get_members_idmember_or_username_organizationsinvited_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/organizationsInvited/:field",
+         "required_params" : [
+            "key",
+            "idMember_or_username",
+            "field"
+         ]
+      },
+      "get_boards_board_id_cards_idcard" : {
+         "optional_params" : [
+            "token",
+            "attachments",
+            "attachment_fields",
+            "actions",
+            "actions_limit",
+            "action_fields",
+            "members",
+            "member_fields",
+            "checkItemStates",
+            "checkItemState_fields",
+            "labels",
+            "checklists",
+            "checklist_fields",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/cards/:idCard",
+         "required_params" : [
+            "key",
+            "board_id",
+            "idCard"
+         ]
+      },
+      "get_members_idmember_or_username_tokens" : {
+         "optional_params" : [
+            "token",
+            "filter"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/tokens",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "get_organizations_idorg_or_name_members" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields",
+            "activity"
+         ],
+         "method" : "GET",
+         "path" : "/1/organizations/:idOrg_or_name/members",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_actions_idaction_membercreator_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/memberCreator/:field",
+         "required_params" : [
+            "key",
+            "idAction",
+            "field"
+         ]
+      },
+      "put_organizations_idorg_or_name_website" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/website",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_actions_idaction_card" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/card",
+         "required_params" : [
+            "key",
+            "idAction"
+         ]
+      },
+      "put_boards_board_id_prefs_comments" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/prefs/comments",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_boards_board_id_membersinvited_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/membersInvited/:field",
+         "required_params" : [
+            "key",
+            "board_id",
+            "field"
+         ]
+      },
+      "post_organizations_idorg_or_name_invitations_response" : {
+         "optional_params" : [
+            "token",
+            "inviteToken"
+         ],
+         "method" : "POST",
+         "path" : "/1/organizations/:idOrg_or_name/invitations/:response",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "response"
+         ]
+      },
+      "delete_boards_board_id_invitations_idinvitation" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/boards/:board_id/invitations/:idInvitation",
+         "required_params" : [
+            "key",
+            "board_id",
+            "idInvitation"
+         ]
+      },
+      "get_boards_board_id_checklists" : {
+         "optional_params" : [
+            "token",
+            "cards",
+            "card_fields",
+            "checkItems",
+            "checkItem_fields",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/checklists",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_idattachmentcover" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/idAttachmentCover",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "get_notifications_idnotification_member_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/member/:field",
+         "required_params" : [
+            "key",
+            "idNotification",
+            "field"
+         ]
+      },
+      "get_lists_idlist_board" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/lists/:idList/board",
+         "required_params" : [
+            "key",
+            "idList"
+         ]
+      },
+      "post_cards_card_id_or_shortlink_labels" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "POST",
+         "path" : "/1/cards/:card_id_or_shortlink/labels",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "get_members_idmember_or_username_boards_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/boards/:filter",
+         "required_params" : [
+            "key",
+            "idMember_or_username",
+            "filter"
+         ]
+      },
+      "delete_organizations_idorg_or_name_invitations_idinvitation" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/organizations/:idOrg_or_name/invitations/:idInvitation",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "idInvitation"
+         ]
+      },
+      "put_organizations_idorg_or_name_displayname" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/displayName",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_notifications_idnotification_list_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/list/:field",
+         "required_params" : [
+            "key",
+            "idNotification",
+            "field"
+         ]
+      },
+      "put_boards_board_id_idorganization" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/idOrganization",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_actions_idaction_board" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/board",
+         "required_params" : [
+            "key",
+            "idAction"
+         ]
+      },
+      "get_actions_idaction_organization" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/organization",
+         "required_params" : [
+            "key",
+            "idAction"
+         ]
+      },
+      "get_lists_idlist_cards" : {
+         "optional_params" : [
+            "token",
+            "actions",
+            "attachments",
+            "attachment_fields",
+            "members",
+            "member_fields",
+            "checkItemStates",
+            "checklists",
+            "filter",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/lists/:idList/cards",
+         "required_params" : [
+            "key",
+            "idList"
+         ]
+      },
+      "get_organizations_idorg_or_name_members_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/organizations/:idOrg_or_name/members/:filter",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "filter"
+         ]
+      },
+      "get_actions_idaction_list_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/list/:field",
+         "required_params" : [
+            "key",
+            "idAction",
+            "field"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_membersvoted" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/membersVoted",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "get_lists_idlist_board_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/lists/:idList/board/:field",
+         "required_params" : [
+            "key",
+            "idList",
+            "field"
+         ]
+      },
+      "get_notifications_idnotification_organization" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/notifications/:idNotification/organization",
+         "required_params" : [
+            "key",
+            "idNotification"
+         ]
+      },
+      "put_lists_idlist" : {
+         "optional_params" : [
+            "token",
+            "name",
+            "closed",
+            "pos"
+         ],
+         "method" : "PUT",
+         "path" : "/1/lists/:idList",
+         "required_params" : [
+            "key",
+            "idList"
+         ]
+      },
+      "delete_organizations_idorg_or_name_logo" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "DELETE",
+         "path" : "/1/organizations/:idOrg_or_name/logo",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "put_boards_board_id_prefs_selfjoin" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/prefs/selfJoin",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_search" : {
+         "optional_params" : [
+            "token",
+            "idBoards",
+            "idCards",
+            "modelTypes",
+            "board_fields",
+            "boards_limit",
+            "card_fields",
+            "cards_limit",
+            "card_board",
+            "card_list",
+            "card_members",
+            "organization_fields",
+            "organizations_limit",
+            "member_fields",
+            "members_limit",
+            "action_fields",
+            "actions_limit",
+            "actions_since",
+            "partial"
+         ],
+         "method" : "GET",
+         "path" : "/1/search",
+         "required_params" : [
+            "key"
+         ]
+      },
+      "put_organizations_idorg_or_name_desc" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/desc",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_actions_idaction" : {
+         "optional_params" : [
+            "token",
+            "fields",
+            "member",
+            "member_fields",
+            "memberCreator",
+            "memberCreator_fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction",
+         "required_params" : [
+            "key",
+            "idAction"
+         ]
+      },
+      "get_cards_card_id_or_shortlink_board" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/cards/:card_id_or_shortlink/board",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "put_organizations_idorg_or_name" : {
+         "optional_params" : [
+            "token",
+            "name",
+            "displayName",
+            "desc",
+            "website"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_boards_board_id_organization" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/organization",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_types_id" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/types/:id",
+         "required_params" : [
+            "key",
+            "id"
+         ]
+      },
+      "put_boards_board_id_prefs_permissionlevel" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/prefs/permissionLevel",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "get_actions_idaction_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/:field",
+         "required_params" : [
+            "key",
+            "idAction",
+            "field"
+         ]
+      },
+      "get_tokens_token_member" : {
+         "optional_params" : [
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/tokens/:token/member",
+         "required_params" : [
+            "key",
+            "token"
+         ]
+      },
+      "get_members_idmember_or_username_boards" : {
+         "optional_params" : [
+            "token",
+            "filter",
+            "fields",
+            "actions",
+            "actions_limit",
+            "actions_format",
+            "actions_since",
+            "action_fields",
+            "lists"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/boards",
+         "required_params" : [
+            "key",
+            "idMember_or_username"
+         ]
+      },
+      "get_lists_idlist_cards_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/lists/:idList/cards/:filter",
+         "required_params" : [
+            "key",
+            "idList",
+            "filter"
+         ]
+      },
+      "put_boards_board_id_name" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/boards/:board_id/name",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "put_cards_card_id_or_shortlink_pos" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/cards/:card_id_or_shortlink/pos",
+         "required_params" : [
+            "key",
+            "card_id_or_shortlink"
+         ]
+      },
+      "get_organizations_idorg_or_name_boards_filter" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/organizations/:idOrg_or_name/boards/:filter",
+         "required_params" : [
+            "key",
+            "idOrg_or_name",
+            "filter"
+         ]
+      },
+      "get_boards_board_id_membersinvited" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/boards/:board_id/membersInvited",
+         "required_params" : [
+            "key",
+            "board_id"
+         ]
+      },
+      "put_organizations_idorg_or_name_prefs_boardvisibilityrestrict_public" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "PUT",
+         "path" : "/1/organizations/:idOrg_or_name/prefs/boardVisibilityRestrict/public",
+         "required_params" : [
+            "key",
+            "idOrg_or_name"
+         ]
+      },
+      "get_actions_idaction_membercreator" : {
+         "optional_params" : [
+            "token",
+            "fields"
+         ],
+         "method" : "GET",
+         "path" : "/1/actions/:idAction/memberCreator",
+         "required_params" : [
+            "key",
+            "idAction"
+         ]
+      },
+      "get_members_idmember_or_username_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/:field",
+         "required_params" : [
+            "key",
+            "idMember_or_username",
+            "field"
+         ]
+      },
+      "put_checklists_idchecklist" : {
+         "optional_params" : [
+            "token",
+            "name"
+         ],
+         "method" : "PUT",
+         "path" : "/1/checklists/:idChecklist",
+         "required_params" : [
+            "key",
+            "idChecklist"
+         ]
+      },
+      "get_members_idmember_or_username_boardsinvited_field" : {
+         "optional_params" : [
+            "token"
+         ],
+         "method" : "GET",
+         "path" : "/1/members/:idMember_or_username/boardsInvited/:field",
+         "required_params" : [
+            "key",
+            "idMember_or_username",
+            "field"
+         ]
+      }
+   },
+   "name" : "Trello",
+   "author" : [
+      "julian maurice <julian.maurice@biblibre.com>"
+   ],
+   "meta" : {
+      "documentation" : "http://www.trello.com/docs"
+   }
+}
+
